@@ -1,0 +1,5 @@
+{
+  "name": "SAR Certificate Management System 2025",
+  "description": "An online system for Satit Udomseuksa School to manage teacher certificates for the 2025 academic year, integrated with educational standards 1-3 and Gemini AI for qualitative report generation.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAR Certificate System 2025 - Satit Udomseuksa School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --font-main: 'Sarabun', sans-serif;
+            --font-en: 'Times New Roman', serif;
+        }
+        body {
+            font-family: var(--font-main);
+        }
+        
+        /* A4 Page Simulation for Screen */
+        .page-container {
+            background-color: #f3f4f6;
+            padding: 2rem 0;
+        }
+
+        /* Official Document Styling - Exact A4 Dimensions and Thai Government Margins */
+        .official-doc {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+            box-sizing: border-box;
+            /* Margins: Top 2.5cm, Left 2.5cm, Right 2.0cm, Bottom 2.0cm */
+            padding-top: 25mm;
+            padding-left: 25mm;
+            padding-right: 20mm;
+            padding-bottom: 20mm;
+            color: black;
+            line-height: 1.6;
+        }
+
+        /* Precise Font Sizes in Points (pt) as requested */
+        .heading-14-bold { font-size: 14pt; font-weight: bold; line-height: 1.4; }
+        .subheading-12-bold { font-size: 12pt; font-weight: bold; line-height: 1.4; }
+        .subheading-12 { font-size: 12pt; font-weight: normal; line-height: 1.4; }
+        .content-11 { font-size: 11pt; font-weight: normal; line-height: 1.5; }
+        .content-11-bold { font-size: 11pt; font-weight: bold; line-height: 1.5; }
+        
+        .font-en { font-family: var(--font-en); }
+
+        @media print {
+            .no-print { display: none !important; }
+            body { background: white; margin: 0; padding: 0; }
+            .page-container { padding: 0; background: none; }
+            .official-doc { 
+                box-shadow: none; 
+                margin: 0;
+                width: 100%;
+                page-break-after: always;
+            }
+        }
+        
+        .page-break-before {
+            page-break-before: always;
+        }
+        
+        .html2pdf__page-break {
+            display: block;
+            height: 0;
+            page-break-before: always;
+        }
+        
+        /* Standard Indentation for Thai Official Letters */
+        .indent-thai {
+            text-indent: 1.5cm;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-gray-50 text-slate-900">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
