@@ -47,13 +47,16 @@ const ReportGenerator: React.FC<Props> = ({ entry, lang }) => {
       <div className="official-doc w-[210mm] min-h-[297mm] mx-auto bg-white pt-[20mm] px-[20mm] pb-[20mm] flex flex-col relative box-border shadow-md print:shadow-none print:m-0">
         
         {/* Header */}
-        <div className="text-center mb-6">
-          <h1 className="text-[14pt] font-bold leading-tight text-black">
-            {lang === 'TH' ? 'รายงานผลการปฏิบัติงานและผลงานเพื่อประกอบการประกันคุณภาพการศึกษา' : 'Self-Assessment Report on Performance and Achievements'}
-          </h1>
-          <h2 className="text-[12pt] font-bold text-black mt-1">{SCHOOL_NAME}</h2>
-          <p className="text-[11pt] text-black">{lang === 'TH' ? 'ปีการศึกษา' : 'Academic Year'} {ACADEMIC_YEAR}</p>
-        </div>
+<div className="text-center mb-6">
+      <h1 className="text-[14pt] font-bold leading-tight text-black">
+        {lang === 'TH' ? 'รายงานผลการปฏิบัติงานและผลงานเพื่อประกอบการประกันคุณภาพการศึกษา' : 'Self-Assessment Report on Performance and Achievements'}
+      </h1>
+      
+      {/* รวมชื่อโรงเรียนและปีการศึกษาไว้ในบรรทัดเดียวกัน (h2) */}
+      <h2 className="text-[12pt] font-bold text-black mt-1">
+        {SCHOOL_NAME} {lang === 'TH' ? 'ปีการศึกษา' : 'Academic Year'} {ACADEMIC_YEAR}
+      </h2>
+</div>
 
         {/* 1. Personnel */}
         <div className="mb-4">
