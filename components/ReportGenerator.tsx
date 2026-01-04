@@ -49,7 +49,7 @@ const ReportGenerator: React.FC<Props> = ({ entry, lang }) => {
         {/* Header */}
         <div className="text-center mb-6">
           <h1 className="text-[14pt] font-bold leading-tight text-black">
-            {lang === 'TH' ? 'รายงานผลการปฏิบัติงานและผลงานเพื่อประกอบการประกันคุณภาพการศึกษา (SAR)' : 'Self-Assessment Report (SAR) on Performance and Achievements'}
+            {lang === 'TH' ? 'รายงานผลการปฏิบัติงานและผลงานเพื่อประกอบการประกันคุณภาพการศึกษา' : 'Self-Assessment Report on Performance and Achievements'}
           </h1>
           <h2 className="text-[12pt] font-bold text-black mt-1">{SCHOOL_NAME}</h2>
           <p className="text-[11pt] text-black">{lang === 'TH' ? 'ปีการศึกษา' : 'Academic Year'} {ACADEMIC_YEAR}</p>
